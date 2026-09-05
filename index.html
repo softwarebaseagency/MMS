@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>MemberBase | Membership operations demo</title>
+  <link rel="icon" href="BaseWebDesign/assets/favicon.ico">
+  <link rel="stylesheet" href="BaseWebDesign/assets/css/tokens.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+      <div class="brand-lockup">
+        <div class="brand-mark">MB</div>
+        <div><strong>MemberBase</strong><small>Membership operations</small></div>
+      </div>
+      <div class="branch-switcher">
+        <span class="eyebrow">Workspace</span>
+        <button class="branch-button" type="button" data-demo="Branch selector">Erbil Central <span>⌄</span></button>
+      </div>
+      <nav id="nav" class="nav-list"></nav>
+      <div class="sidebar-footer">
+        <div class="demo-status"><span></span> Interface demo</div>
+        <button class="profile-button" type="button" data-demo="Account menu"><span class="avatar avatar--small">SA</span><span><b>Sarah A.</b><small>Manager</small></span><span class="profile-caret">⌄</span></button>
+      </div>
+    </aside>
+
+    <section class="main-column">
+      <header class="topbar">
+        <button class="icon-button mobile-menu" id="menuToggle" type="button" aria-label="Open navigation">☰</button>
+        <label class="global-search"><span aria-hidden="true">⌕</span><input id="globalSearch" type="search" placeholder="Search members, invoices, tasks..." autocomplete="off"></label>
+        <div class="topbar-actions">
+          <button class="icon-button notification-button" id="notificationButton" type="button" aria-label="Notifications"><span aria-hidden="true">♢</span><i>4</i></button>
+          <button class="help-button" type="button" data-demo="Help center">?</button>
+          <button class="user-chip" type="button" data-demo="Account menu"><span class="avatar">SA</span><span class="user-name">Sarah Akram</span><span class="chevron">⌄</span></button>
+        </div>
+      </header>
+      <main id="main" tabindex="-1"></main>
+    </section>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="modalRoot"></div>
+  <script src="BaseWebDesign/assets/js/icons.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
